@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Invisible Space Tool for WhatsApp & Free Fire | Complete Guide 2025</title>
+  <meta name="description" content="Learn how to use invisible space characters in WhatsApp & Free Fire. Generate blank names, empty messages, and undetectable spaces with our complete step-by-step guide." />
+  <meta name="keywords" content="invisible space, WhatsApp invisible text, Free Fire blank name, empty character, invisible character generator, espaço invisível, unicode blank space" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://yourusername.github.io/invisible-space-tool/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Invisible Space Tool – WhatsApp & Free Fire Complete Guide" />
+  <meta property="og:description" content="Generate invisible Unicode characters for WhatsApp bio, messages, and Free Fire blank names. Free tool, no download needed." />
+  <meta property="og:type" content="website" />
+
+  <!-- Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "How to Use Invisible Space in WhatsApp and Free Fire",
+    "description": "Step-by-step guide to generating and using invisible Unicode characters for WhatsApp and Free Fire.",
+    "step": [
+      { "@type": "HowToStep", "name": "Generate the character", "text": "Use an invisible space generator tool to copy the Unicode blank character." },
+      { "@type": "HowToStep", "name": "Copy to clipboard", "text": "Tap the copy button to save the invisible character." },
+      { "@type": "HowToStep", "name": "Paste in WhatsApp or Free Fire", "text": "Open the app and paste the character in the name or message field." }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --bg: #050a0f;
+      --bg2: #0b1520;
+      --bg3: #0f1e30;
+      --accent: #00e5ff;
+      --accent2: #7b61ff;
+      --accent3: #ff4d6d;
+      --text: #e8f4f8;
+      --muted: #7a9bb5;
+      --card: #0d1f30;
+      --border: rgba(0,229,255,0.12);
+      --glow: rgba(0,229,255,0.15);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 16px;
+      line-height: 1.75;
+      overflow-x: hidden;
+    }
+
+    /* ─── NOISE TEXTURE ─── */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0.4;
+    }
+
+    /* ─── GRID LINES ─── */
+    body::after {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(0,229,255,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,229,255,0.03) 1px, transparent 1px);
+      background-size: 60px 60px;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* ─── GLOW ORBS ─── */
+    .orb {
+      position: fixed;
+      border-radius: 50%;
+      filter: blur(120px);
+      pointer-events: none;
+      z-index: 0;
+    }
+    .orb-1 { width: 500px; height: 500px; background: rgba(0,229,255,0.06); top: -150px; right: -100px; }
+    .orb-2 { width: 400px; height: 400px; background: rgba(123,97,255,0.07); bottom: 10%; left: -100px; }
+    .orb-3 { width: 300px; height: 300px; background: rgba(255,77,109,0.05); top: 50%; right: 10%; }
+
+    /* ─── LAYOUT ─── */
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 24px;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* ─── NAV ─── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(5,10,15,0.85);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+      padding: 16px 0;
+    }
+    nav .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .nav-logo {
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: 1.1rem;
+      color: var(--accent);
+      text-decoration: none;
+      letter-spacing: -0.5px;
+    }
+    .nav-logo span { color: var(--text); }
+    .nav-badge {
+      font-size: 0.72rem;
+      font-weight: 600;
+      padding: 4px 12px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      color: var(--muted);
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    /* ─── HERO ─── */
+    .hero {
+      padding: 90px 0 70px;
+      text-align: center;
+    }
+    .hero-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--accent);
+      background: rgba(0,229,255,0.08);
+      border: 1px solid rgba(0,229,255,0.2);
+      padding: 6px 16px;
+      border-radius: 999px;
+      margin-bottom: 28px;
+      animation: fadeUp 0.6s ease both;
+    }
+    .hero-tag::before { content: '●'; font-size: 0.6em; animation: pulse 2s infinite; }
+    @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.3} }
+
+    h1 {
+      font-family: 'Syne', sans-serif;
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 800;
+      line-height: 1.15;
+      letter-spacing: -1px;
+      margin-bottom: 20px;
+      animation: fadeUp 0.6s 0.1s ease both;
+    }
+    h1 .hl { color: var(--accent); }
+    h1 .hl2 { color: var(--accent2); }
+
+    .hero-sub {
+      font-size: 1.05rem;
+      color: var(--muted);
+      max-width: 620px;
+      margin: 0 auto 40px;
+      font-weight: 300;
+      animation: fadeUp 0.6s 0.2s ease both;
+    }
+
+    .hero-cta-group {
+      display: flex;
+      gap: 14px;
+      justify-content: center;
+      flex-wrap: wrap;
+      animation: fadeUp 0.6s 0.3s ease both;
+    }
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 13px 28px;
+      border-radius: 10px;
+      background: var(--accent);
+      color: #050a0f;
+      font-weight: 700;
+      font-size: 0.95rem;
+      text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 0 30px rgba(0,229,255,0.25);
+    }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 0 50px rgba(0,229,255,0.4); }
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 13px 28px;
+      border-radius: 10px;
+      background: transparent;
+      color: var(--text);
+      font-weight: 600;
+      font-size: 0.95rem;
+      text-decoration: none;
+      border: 1px solid var(--border);
+      transition: border-color 0.2s, background 0.2s;
+    }
+    .btn-secondary:hover { border-color: var(--accent); background: var(--glow); }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ─── STATS BAR ─── */
+    .stats-bar {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      overflow: hidden;
+      margin: 60px 0;
+    }
+    .stat-item {
+      background: var(--card);
+      padding: 24px 20px;
+      text-align: center;
+    }
+    .stat-num {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.9rem;
+      font-weight: 800;
+      color: var(--accent);
+      display: block;
+    }
+    .stat-label { font-size: 0.8rem; color: var(--muted); margin-top: 4px; }
+
+    /* ─── ARTICLE BODY ─── */
+    .article { padding: 0 0 80px; }
+
+    h2 {
+      font-family: 'Syne', sans-serif;
+      font-size: clamp(1.4rem, 3vw, 1.85rem);
+      font-weight: 700;
+      color: var(--text);
+      margin: 56px 0 18px;
+      letter-spacing: -0.5px;
+      position: relative;
+      padding-left: 20px;
+    }
+    h2::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 4px;
+      height: 70%;
+      background: linear-gradient(to bottom, var(--accent), var(--accent2));
+      border-radius: 4px;
+    }
+
+    h3 {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: var(--accent2);
+      margin: 34px 0 12px;
+    }
+
+    p { color: var(--muted); margin-bottom: 18px; font-weight: 300; }
+    p strong { color: var(--text); font-weight: 500; }
+
+    a { color: var(--accent); text-decoration: none; border-bottom: 1px solid rgba(0,229,255,0.3); transition: border-color 0.2s; }
+    a:hover { border-color: var(--accent); }
+
+    /* ─── CALLOUT BOXES ─── */
+    .callout {
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin: 28px 0;
+      border-left: 3px solid;
+      position: relative;
+    }
+    .callout-info { background: rgba(0,229,255,0.06); border-color: var(--accent); }
+    .callout-warn { background: rgba(255,77,109,0.06); border-color: var(--accent3); }
+    .callout-tip  { background: rgba(123,97,255,0.06); border-color: var(--accent2); }
+    .callout-label {
+      font-family: 'Syne', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+      display: block;
+    }
+    .callout-info .callout-label { color: var(--accent); }
+    .callout-warn .callout-label { color: var(--accent3); }
+    .callout-tip  .callout-label { color: var(--accent2); }
+    .callout p { margin: 0; }
+
+    /* ─── STEP CARDS ─── */
+    .steps {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin: 28px 0;
+    }
+    .step-card {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 22px 24px;
+      transition: border-color 0.3s, transform 0.3s;
+    }
+    .step-card:hover { border-color: rgba(0,229,255,0.3); transform: translateX(4px); }
+    .step-num {
+      width: 38px;
+      height: 38px;
+      min-width: 38px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: 1rem;
+      color: #050a0f;
+    }
+    .step-content h4 {
+      font-family: 'Syne', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 6px;
+    }
+    .step-content p { margin: 0; font-size: 0.93rem; }
+
+    /* ─── FEATURE GRID ─── */
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 16px;
+      margin: 28px 0;
+    }
+    .feature-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 24px 20px;
+      transition: border-color 0.3s, box-shadow 0.3s;
+    }
+    .feature-card:hover {
+      border-color: rgba(0,229,255,0.25);
+      box-shadow: 0 0 30px rgba(0,229,255,0.06);
+    }
+    .feature-icon { font-size: 1.8rem; margin-bottom: 14px; display: block; }
+    .feature-card h4 {
+      font-family: 'Syne', sans-serif;
+      font-size: 0.98rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+    .feature-card p { font-size: 0.88rem; margin: 0; }
+
+    /* ─── CODE BLOCK ─── */
+    .code-block {
+      background: #020810;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px 24px;
+      font-family: 'Courier New', monospace;
+      font-size: 0.9rem;
+      color: var(--accent);
+      margin: 20px 0;
+      overflow-x: auto;
+      position: relative;
+    }
+    .code-label {
+      position: absolute;
+      top: 12px;
+      right: 14px;
+      font-size: 0.7rem;
+      font-family: 'DM Sans', sans-serif;
+      color: var(--muted);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    /* ─── TABLE ─── */
+    .table-wrap { overflow-x: auto; margin: 24px 0; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+    }
+    thead th {
+      font-family: 'Syne', sans-serif;
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--muted);
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--border);
+      text-align: left;
+    }
+    tbody td {
+      padding: 14px 16px;
+      border-bottom: 1px solid rgba(0,229,255,0.06);
+      color: var(--muted);
+    }
+    tbody tr:hover td { background: rgba(0,229,255,0.03); }
+    tbody td strong { color: var(--text); }
+
+    /* ─── FAQ ─── */
+    .faq { margin: 28px 0; }
+    .faq-item {
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      margin-bottom: 12px;
+      overflow: hidden;
+    }
+    .faq-q {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 22px;
+      cursor: pointer;
+      font-family: 'Syne', sans-serif;
+      font-weight: 600;
+      font-size: 0.97rem;
+      color: var(--text);
+      background: var(--card);
+      user-select: none;
+      transition: background 0.2s;
+    }
+    .faq-q:hover { background: rgba(0,229,255,0.05); }
+    .faq-q .arrow { transition: transform 0.3s; color: var(--accent); font-size: 1.2rem; }
+    .faq-item.open .arrow { transform: rotate(45deg); }
+    .faq-a {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease, padding 0.3s;
+      padding: 0 22px;
+      font-size: 0.93rem;
+      color: var(--muted);
+      background: var(--bg2);
+    }
+    .faq-item.open .faq-a { max-height: 300px; padding: 18px 22px; }
+
+    /* ─── TOOL CTA BANNER ─── */
+    .cta-banner {
+      background: linear-gradient(135deg, rgba(0,229,255,0.08), rgba(123,97,255,0.08));
+      border: 1px solid rgba(0,229,255,0.2);
+      border-radius: 20px;
+      padding: 48px 40px;
+      text-align: center;
+      margin: 60px 0;
+      position: relative;
+      overflow: hidden;
+    }
+    .cta-banner::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 300px;
+      height: 200px;
+      background: radial-gradient(ellipse, rgba(0,229,255,0.1), transparent 70%);
+      pointer-events: none;
+    }
+    .cta-banner h2 {
+      margin: 0 0 14px;
+      padding: 0;
+      font-size: 1.7rem;
+    }
+    .cta-banner h2::before { display: none; }
+    .cta-banner p { margin: 0 0 28px; font-size: 1rem; }
+    .cta-buttons { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+
+    /* ─── FOOTER ─── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 40px 0;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.85rem;
+      position: relative;
+      z-index: 1;
+    }
+    footer a { color: var(--muted); border-color: transparent; }
+    footer a:hover { color: var(--accent); }
+
+    /* ─── SCROLL REVEAL ─── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .reveal.visible { opacity: 1; transform: none; }
+
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 600px) {
+      .stats-bar { grid-template-columns: 1fr; }
+      .hero { padding: 60px 0 40px; }
+      .cta-banner { padding: 36px 24px; }
+      h2 { font-size: 1.35rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Background Effects -->
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="container">
+      <a href="#" class="nav-logo">Invisible<span>Space</span></a>
+      <span class="nav-badge">Free Tool · 2025</span>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-tag">Updated May 2025</div>
+      <h1>
+        <span class="hl">Invisible Space</span> Tool for<br>
+        <span class="hl2">WhatsApp</span> &amp; Free Fire
+      </h1>
+      <p class="hero-sub">
+        The complete, no-fluff guide to generating, using, and understanding invisible Unicode characters — for blank names, silent messages, and hidden bios.
+      </p>
+      <div class="hero-cta-group">
+        <a href="https://espacoinvisiveis.com.br/" target="_blank" rel="noopener" class="btn-primary">
+          ⚡ espaço invisível Generator
+        </a>
+        <a href="https://invisible-space-detector.netlify.app/" target="_blank" rel="noopener" class="btn-secondary">
+          🔍 Detect Invisible Spaces
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Bar -->
+  <div class="container">
+    <div class="stats-bar reveal">
+      <div class="stat-item">
+        <span class="stat-num">10+</span>
+        <span class="stat-label">Unicode Character Types</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">100%</span>
+        <span class="stat-label">Free, No Signup</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">3</span>
+        <span class="stat-label">Steps to Use</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Article Body -->
+  <article class="article">
+    <div class="container">
+
+      <!-- What Is -->
+      <section class="reveal">
+        <h2>What Is an Invisible Space Character?</h2>
+        <p>An <strong>invisible space character</strong> is a Unicode symbol that takes up space on screen but cannot be seen by the naked eye. Unlike the regular spacebar character (U+0020), these special Unicode characters are treated differently by apps and operating systems — making them perfect for creating blank names, sending empty-looking messages, or leaving invisible gaps in text.</p>
+        <p>The most commonly used invisible characters include the <strong>zero-width non-joiner (U+200C)</strong>, the <strong>Hangul filler (U+3164)</strong>, the <strong>braille blank (U+2800)</strong>, and the <strong>em space (U+2003)</strong>. Each behaves slightly differently depending on the platform, font rendering engine, and operating system being used.</p>
+        <p>These characters are 100% legitimate Unicode — they are part of the official Unicode Standard and are used in linguistics, typography, and internationalization. Their use in apps like WhatsApp and Free Fire is simply a creative application of existing text encoding.</p>
+
+        <div class="callout callout-info">
+          <span class="callout-label">ℹ️ Quick Definition</span>
+          <p>An invisible space is a <strong>real Unicode character</strong> — it just renders as nothing visible. It's not a bug or exploit; it's a feature of international text encoding standards.</p>
+        </div>
+      </section>
+
+      <!-- WhatsApp Section -->
+      <section class="reveal">
+        <h2>How to Use Invisible Space in WhatsApp</h2>
+        <p>WhatsApp has several places where invisible characters come in handy — your profile name, status bio, and even inside chat messages. Using a blank character lets you create a <strong>completely empty WhatsApp status</strong>, add invisible padding to your name, or send a message that appears blank to the recipient.</p>
+
+        <h3>Method 1: Blank WhatsApp Status / Bio</h3>
+        <div class="steps">
+          <div class="step-card">
+            <div class="step-num">1</div>
+            <div class="step-content">
+              <h4>Visit an espaço invisível Generator</h4>
+              <p>Open <a href="https://espacoinvisiveis.com.br/" target="_blank" rel="noopener">espaço invisível</a> in your phone browser. This tool gives you a ready-to-copy invisible Unicode character with one tap.</p>
+            </div>
+          </div>
+          <div class="step-card">
+            <div class="step-num">2</div>
+            <div class="step-content">
+              <h4>Copy the Invisible Character</h4>
+              <p>Tap the <strong>"Copy"</strong> button on the site. The invisible character is now in your clipboard — even though you can't see it, it's there.</p>
+            </div>
+          </div>
+          <div class="step-card">
+            <div class="step-num">3</div>
+            <div class="step-content">
+              <h4>Paste in WhatsApp Status or Name</h4>
+              <p>Open WhatsApp → Settings → Profile. Tap the Status or Name field, long-press and tap <strong>Paste</strong>. Save and your bio will appear completely empty.</p>
+            </div>
+          </div>
+        </div>
+
+        <h3>Method 2: Send an Invisible WhatsApp Message</h3>
+        <p>Want to send a message that looks completely blank? Simply paste the invisible character into a chat message field and hit send. The recipient will receive a notification but see what appears to be an empty message bubble. This works on both Android and iOS versions of WhatsApp as of 2025.</p>
+
+        <div class="callout callout-tip">
+          <span class="callout-label">💡 Pro Tip</span>
+          <p>If WhatsApp rejects a single invisible character in the name field, try <strong>repeating the character 2–3 times</strong>. Some versions require a minimum visual "weight" before accepting the input.</p>
+        </div>
+
+        <h3>Why Invisible Characters Work in WhatsApp</h3>
+        <p>WhatsApp validates text fields by checking that input is not an <em>empty string</em>. Since invisible Unicode characters are real characters (they have a Unicode code point), they pass this validation — the field is technically not empty, it just renders as blank. This is why copy-pasting works while simply pressing space sometimes does not.</p>
+      </section>
+
+      <!-- Free Fire Section -->
+      <section class="reveal">
+        <h2>Invisible Space for Free Fire — Blank Name Guide</h2>
+        <p>One of the most popular uses of invisible Unicode characters in mobile gaming is creating a <strong>blank name in Free Fire</strong>. A blank or invisible Free Fire name makes your character appear nameless on the battlefield, which can confuse opponents and give your profile a mysterious look in the lobby.</p>
+
+        <h3>Creating a Blank Free Fire Name</h3>
+        <div class="steps">
+          <div class="step-card">
+            <div class="step-num">1</div>
+            <div class="step-content">
+              <h4>Get Your Invisible Character</h4>
+              <p>Go to <a href="https://espacoinvisiveis.com.br/" target="_blank" rel="noopener">espaço invisível</a> and copy the Hangul filler character (U+3164). This is the most reliable character for Free Fire name fields.</p>
+            </div>
+          </div>
+          <div class="step-card">
+            <div class="step-num">2</div>
+            <div class="step-content">
+              <h4>Open Free Fire and Go to Profile</h4>
+              <p>Launch Free Fire → tap your avatar → tap the <strong>Edit</strong> (pencil) icon next to your name. Clear your current name completely.</p>
+            </div>
+          </div>
+          <div class="step-card">
+            <div class="step-num">3</div>
+            <div class="step-content">
+              <h4>Paste the Invisible Character</h4>
+              <p>Long-press in the name field and tap Paste. You should see the cursor move slightly — that means the character is there. Confirm the name change (uses one rename card).</p>
+            </div>
+          </div>
+          <div class="step-card">
+            <div class="step-num">4</div>
+            <div class="step-content">
+              <h4>Verify Your Blank Name</h4>
+              <p>Exit and return to your profile. Your name should now appear completely blank. In-game, your character name will show as empty in the kill feed and lobby screen.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="callout callout-warn">
+          <span class="callout-label">⚠️ Important Note</span>
+          <p>Garena periodically updates Free Fire's input validation. If one invisible character is rejected, try the <strong>Braille Blank (U+2800)</strong> or combine multiple character types. Always use a rename card when attempting changes.</p>
+        </div>
+      </section>
+
+      <!-- Character Types -->
+      <section class="reveal">
+        <h2>Types of Invisible Unicode Characters — Comparison Table</h2>
+        <p>Not all invisible characters behave the same way. Here's a breakdown of the most useful ones and where they work best:</p>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Character Name</th>
+                <th>Unicode</th>
+                <th>WhatsApp</th>
+                <th>Free Fire</th>
+                <th>Best For</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Hangul Filler</strong></td>
+                <td>U+3164</td>
+                <td>✅ Yes</td>
+                <td>✅ Yes</td>
+                <td>Blank names</td>
+              </tr>
+              <tr>
+                <td><strong>Braille Blank</strong></td>
+                <td>U+2800</td>
+                <td>✅ Yes</td>
+                <td>✅ Yes</td>
+                <td>Blank messages</td>
+              </tr>
+              <tr>
+                <td><strong>Zero-Width Space</strong></td>
+                <td>U+200B</td>
+                <td>⚠️ Partial</td>
+                <td>❌ No</td>
+                <td>Text padding</td>
+              </tr>
+              <tr>
+                <td><strong>Em Space</strong></td>
+                <td>U+2003</td>
+                <td>✅ Yes</td>
+                <td>⚠️ Partial</td>
+                <td>Wide spacing</td>
+              </tr>
+              <tr>
+                <td><strong>Figure Space</strong></td>
+                <td>U+2007</td>
+                <td>⚠️ Partial</td>
+                <td>❌ No</td>
+                <td>Numeric alignment</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Detector Section -->
+      <section class="reveal">
+        <h2>How to Detect and Remove Invisible Characters</h2>
+        <p>Invisible characters can sometimes cause unexpected issues — a text file that won't parse correctly, a password that won't authenticate, or copied content that behaves strangely. In these cases, you need a reliable way to <strong>find and remove hidden Unicode characters</strong>.</p>
+
+        <h3>Using an Invisible Space Detector</h3>
+        <p>The easiest solution is to use a dedicated <a href="https://invisible-space-detector.netlify.app/" target="_blank" rel="noopener">invisible space detector tool</a>. Simply paste your text into the detector and it will highlight any hidden characters, show their Unicode code points, and give you the option to remove them with a single click.</p>
+
+        <div class="feature-grid">
+          <div class="feature-card">
+            <span class="feature-icon">🔍</span>
+            <h4>Visual Highlighting</h4>
+            <p>Invisible characters are highlighted in color so you can see exactly where they are hiding in your text.</p>
+          </div>
+          <div class="feature-card">
+            <span class="feature-icon">📋</span>
+            <h4>Unicode Code Points</h4>
+            <p>See the exact Unicode value of each hidden character — useful for debugging code or document issues.</p>
+          </div>
+          <div class="feature-card">
+            <span class="feature-icon">🗑️</span>
+            <h4>One-Click Removal</h4>
+            <p>Strip all invisible characters instantly with a single button and get clean, plain text back.</p>
+          </div>
+          <div class="feature-card">
+            <span class="feature-icon">📱</span>
+            <h4>Works on Mobile</h4>
+            <p>Fully functional on smartphones — perfect for checking copied WhatsApp or game text on the go.</p>
+          </div>
+        </div>
+
+        <h3>Manual Detection Methods</h3>
+        <p>If you don't have access to a detector tool, you can also check for invisible characters manually. In most code editors like VS Code, enable <strong>"Render Whitespace: All"</strong> from settings and invisible characters will show as small dots or highlighted blocks. In a browser, you can paste the text into the developer console and check the <code>.length</code> property — if it's higher than expected, hidden characters are present.</p>
+      </section>
+
+      <!-- Why Use -->
+      <section class="reveal">
+        <h2>Why People Use Invisible Spaces — Common Use Cases</h2>
+
+        <div class="feature-grid">
+          <div class="feature-card">
+            <span class="feature-icon">👾</span>
+            <h4>Gaming Personas</h4>
+            <p>Create a nameless identity in Free Fire, PUBG Mobile, and similar games for a mysterious aesthetic.</p>
+          </div>
+          <div class="feature-card">
+            <span class="feature-icon">💬</span>
+            <h4>Social Media Spacing</h4>
+            <p>Add clean invisible line breaks in Instagram captions and WhatsApp bios without dot tricks.</p>
+          </div>
+          <div class="feature-card">
+            <span class="feature-icon">📄</span>
+            <h4>Document Formatting</h4>
+            <p>Align text in tables, forms, and documents where regular spaces create inconsistent results.</p>
+          </div>
+          <div class="feature-card">
+            <span class="feature-icon">🔐</span>
+            <h4>Password Separators</h4>
+            <p>Some users include zero-width characters as invisible separators in passwords for extra complexity.</p>
+          </div>
+          <div class="feature-card">
+            <span class="feature-icon">🌐</span>
+            <h4>Web Development</h4>
+            <p>Developers use invisible characters as string markers and for right-to-left text handling in i18n apps.</p>
+          </div>
+          <div class="feature-card">
+            <span class="feature-icon">🎭</span>
+            <h4>Prank Messages</h4>
+            <p>Send blank-looking messages that show a notification but appear empty to confuse friends.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Technical Section -->
+      <section class="reveal">
+        <h2>Technical Deep Dive — Unicode Invisible Characters Explained</h2>
+        <p>At the core of every invisible character is the <strong>Unicode Standard</strong> — the universal system for encoding text across every language, platform, and device. Unicode contains over 143,000 characters, and a subset of these are intentionally designed to be invisible or have zero visual width.</p>
+
+        <h3>Zero-Width Characters</h3>
+        <p>Characters like the <strong>Zero-Width Space (U+200B)</strong> and <strong>Zero-Width Non-Joiner (U+200C)</strong> occupy no width at all. They are primarily used in typography for controlling word-break behavior in languages like Thai, Burmese, and Japanese — but can be repurposed as invisible markers in any app that accepts Unicode input.</p>
+
+        <div class="code-block">
+          <span class="code-label">Unicode Examples</span>
+U+200B  → Zero-Width Space
+U+200C  → Zero-Width Non-Joiner
+U+200D  → Zero-Width Joiner
+U+2800  → Braille Pattern Blank
+U+3164  → Hangul Filler
+U+FEFF  → Zero-Width No-Break Space (BOM)
+        </div>
+
+        <h3>Why Some Characters Work in Some Apps But Not Others</h3>
+        <p>Whether an invisible character works in a particular app depends on how that app validates input. Apps that check for <strong>"is the string empty?"</strong> will accept any character with a valid code point. Apps that check for <strong>"does this character have a visible glyph?"</strong> or use font-rendering filters will reject purely invisible characters. This is why testing multiple character types is sometimes necessary.</p>
+
+        <div class="callout callout-tip">
+          <span class="callout-label">🔧 Developer Note</span>
+          <p>If you're building an app and want to prevent invisible character abuse in usernames, validate against a whitelist of allowed Unicode categories rather than just checking string length or trying to strip specific code points. The <strong>invisible space detector</strong> shows which categories these characters belong to.</p>
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section class="reveal">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq">
+
+          <div class="faq-item">
+            <div class="faq-q">Is using invisible characters in Free Fire against the rules? <span class="arrow">+</span></div>
+            <div class="faq-a">Garena does not explicitly ban invisible name characters in their terms of service as of 2025. However, the game does periodically update its input filters. Using an invisible name is a cosmetic preference and does not affect gameplay balance, so it is generally considered harmless. Always use at your own discretion.</div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-q">Why does my invisible character show as a box or question mark? <span class="arrow">+</span></div>
+            <div class="faq-a">This happens when the app or font does not have a glyph for that Unicode character and renders a fallback symbol instead. Try a different invisible character type — the Braille Blank (U+2800) and Hangul Filler (U+3164) have the broadest compatibility across mobile fonts.</div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-q">Can I copy an invisible character from this page? <span class="arrow">+</span></div>
+            <div class="faq-a">For the most reliable experience, use the dedicated espaço invisível generator tool linked on this page. It generates fresh, properly-encoded invisible characters optimized for WhatsApp and Free Fire compatibility.</div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-q">How do I know if a text contains invisible characters? <span class="arrow">+</span></div>
+            <div class="faq-a">Use the invisible space detector tool linked on this page. Paste your text and it will visually highlight all hidden characters. Alternatively, check the character count — if it's more than you expect for visible content, there are hidden characters present.</div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-q">Does WhatsApp allow blank profile names in 2025? <span class="arrow">+</span></div>
+            <div class="faq-a">WhatsApp requires a minimum character count in the name field but does not distinguish between visible and invisible Unicode characters. Using invisible characters that meet the minimum character count requirement allows you to create a name that appears blank while passing validation.</div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-q">What is the best invisible character for WhatsApp bio? <span class="arrow">+</span></div>
+            <div class="faq-a">The Hangul Filler (U+3164) and Braille Blank (U+2800) are the most reliable for WhatsApp bios as of 2025. Both are accepted by WhatsApp's validation system and render as completely invisible on most Android and iOS devices.</div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- CTA Banner -->
+      <div class="cta-banner reveal">
+        <h2>Ready to Try It?</h2>
+        <p>Use our free tools to generate invisible characters or detect hidden spaces in any text — no signup, no download.</p>
+        <div class="cta-buttons">
+          <a href="https://espacoinvisiveis.com.br/" target="_blank" rel="noopener" class="btn-primary">⚡ Open espaço invisível</a>
+          <a href="https://invisible-space-detector.netlify.app/" target="_blank" rel="noopener" class="btn-secondary">🔍 Invisible Space Detector</a>
+        </div>
+      </div>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2025 Invisible Space Guide &nbsp;·&nbsp; <a href="https://espacoinvisiveis.com.br/" target="_blank" rel="noopener">espaço invisível</a> &nbsp;·&nbsp; <a href="https://invisible-space-detector.netlify.app/" target="_blank" rel="noopener">Invisible Space Detector</a></p>
+      <p style="margin-top:10px;">Built for educational purposes · Unicode Standard Reference</p>
+    </div>
+  </footer>
+
+  <script>
+    // Scroll Reveal
+    const reveals = document.querySelectorAll('.reveal');
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
+    }, { threshold: 0.08 });
+    reveals.forEach(el => io.observe(el));
+
+    // FAQ Toggle
+    document.querySelectorAll('.faq-q').forEach(q => {
+      q.addEventListener('click', () => {
+        const item = q.parentElement;
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+        if (!isOpen) item.classList.add('open');
+      });
+    });
+  </script>
+</body>
+</html>
